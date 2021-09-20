@@ -1,0 +1,102 @@
+
+tatai@DESKTOP-KCJ84DE MINGW64 /c/repo/exerciciodebruna-1909
+$ git clone https://github.com/Liu-moreira/exerciciodebruna-1909.git
+Cloning into 'exerciciodebruna-1909'...
+warning: You appear to have cloned an empty repository.
+
+tatai@DESKTOP-KCJ84DE MINGW64 /c/repo/exerciciodebruna-1909
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+tatai@DESKTOP-KCJ84DE MINGW64 /c/repo/exerciciodebruna-1909
+$ git init
+Initialized empty Git repository in C:/repo/exerciciodebruna-1909/.git/
+
+tatai@DESKTOP-KCJ84DE MINGW64 /c/repo/exerciciodebruna-1909 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt
+        frase.txt
+        fruta.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+tatai@DESKTOP-KCJ84DE MINGW64 /c/repo/exerciciodebruna-1909 (master)
+$ git add frase.txt
+
+tatai@DESKTOP-KCJ84DE MINGW64 /c/repo/exerciciodebruna-1909 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   frase.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt
+        fruta.txt
+
+
+tatai@DESKTOP-KCJ84DE MINGW64 /c/repo/exerciciodebruna-1909 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   frase.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        cor.txt
+        fruta.txt
+
+
+tatai@DESKTOP-KCJ84DE MINGW64 /c/repo/exerciciodebruna-1909 (master)
+$ git add .
+
+tatai@DESKTOP-KCJ84DE MINGW64 /c/repo/exerciciodebruna-1909 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   cor.txt
+        new file:   frase.txt
+        new file:   fruta.txt
+
+
+tatai@DESKTOP-KCJ84DE MINGW64 /c/repo/exerciciodebruna-1909 (master)
+$ git commit -m "Primeiro commit"
+[master (root-commit) f4c56fd] Primeiro commit
+ 3 files changed, 4 insertions(+)
+ create mode 100644 cor.txt
+ create mode 100644 frase.txt
+ create mode 100644 fruta.txt
+
+tatai@DESKTOP-KCJ84DE MINGW64 /c/repo/exerciciodebruna-1909 (master)
+$ git remote add origin https://github.com/Liu-moreira/exerciciodebruna-1909.git
+tatai@DESKTOP-KCJ84DE MINGW64 /c/repo/exerciciodebruna-1909 (master)
+$ git push -u origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 315 bytes | 315.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Liu-moreira/exerciciodebruna-1909.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+tatai@DESKTOP-KCJ84DE MINGW64 /c/repo/exerciciodebruna-1909 (master)
